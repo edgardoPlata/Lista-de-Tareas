@@ -1,0 +1,68 @@
+body {
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #006666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+/* Media queries para hacer responsive */
+
+@media only screen and (max-width: 600px) {
+    input[type="text"] {
+        width: calc(100% - 80px);
+    }
+    button {
+        width: 80px;
+    }
+}
